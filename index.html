@@ -1,78 +1,116 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>Практическая задача 3.1.4._Куликова Ольга</title>
-    <link rel="stylesheet" href="style.css">
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Практическая задача 3.1.4._Куликова Ольга</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-        <nav class="menu">
-          
-                <button class="menu_btn"><img class="menu_btn--burger" src="burger.svg" alt="burger"></button>
-                <div class="menu_border--pad"></div>
-                <div class="menu_logo">                   
-                        <img class="menu_logo--img" src="logo.svg" alt="logo">
-                </div>                      
-                <a class="menu_desktop" href="#"><img class="menu_desktop--call" src="call.svg" alt="call"></a>                            
-                <a class="menu_desktop" href="#"><img class="menu_desktop--chat" src="chat.svg" alt="chat"></a>                
-                <button class="menu_desktop"><img class="menu_desktop--profile" src="profile.svg" alt="profile"></button>
-                <div class="menu_border"></div>
-                <button class="menu_btn"><img class="menu_btn--repair" src="repair.svg" alt="repair"></button>
-                <button class="menu_btn"><img class="menu_btn--checkstatus" src="check.svg" alt="status"></button>
-            
-        </nav>
-        <main>
-        <header class="title">
-            <div class="title_border"></div>
-            <h1 class="title_text"> Услуги и сервисы </h1>
-            <div class="title_label">Оставить заявку<button class="title_label--btn"><img class="title_label--btn--repair" src="repair.svg" alt="repair"></button></div>
-            <div class="title_label">Статус ремонта<button class="title_label--btn"><img class="title_label--btn--checkstatus" src="check.svg" alt="status"></button></div>
-            
-        </header>
-        <nav class="navigation">
-            <ul class="navigation_list">
-                <li class="navigation_list--item">
-                    <a class="navigation_list--item--link" href="#">Ремонтируемые устройства</a>
-                </li>
-                <li class="navigation_list--item">
-                    <a class="navigation_list--item--link" href="#">Ремонтируемые бренды</a>
-                </li>            
-                <li class="navigation_list--item">
-                    <a class="navigation_list--item--link" href="#">Цены на услуги</a>
-                </li>
-                <li class="navigation_list--item">
-                    <a class="navigation_list--item--link" href="#">Адреса сервисных центров</a>
-                </li>
-                <li class="navigation_list--item">
-                    <a class="navigation_list--item--link" href="#">Специальные цены</a>
-                </li>
-                <li class="navigation_list--item">
-                    <a class="navigation_list--item--link" href="#">Отзывы</a>
-                </li>
-            </ul>
-        </nav>
-        <article class="block">
-            <div class="block_info">
-                <p class="block_info--text"><span class="block_info--text--visible"> Мы являемся авторизованным сервисным центром по ремонту техники Dell. 
-                    Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</span><br>
 
-                    <span class="block_info--text--hidden">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое 
-                    количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, 
-                    советуют нас родным и близким.</span> 
-                </p>
+  <nav class="menu">
+    <button class="menu__btn">
+      <img class="menu__btn-img-burger" src="burger.svg" alt="burger">
+    </button>
+    <div class="menu__border-pad"></div>
+    <div class="menu__logo">
+      <img class="menu__logo-img" src="logo.svg" alt="logo">
+    </div>
 
-            </div>
-            <div class="block_next">
-                <button class="block_next--btn"><img class="block_next--btn--img" src="next.svg" alt="next"></button>
-                <p class="block_next--text"><b class="block_next--text--bold">Читать далее</b></p>
-            </div>
-            <div class="block_pic">
-               <img class="block_pic--img" src="img.jpg">
-            </div>
-        </article>
-    </main>
+    <a class="menu__icon" href="#">
+      <img class="menu__icon-img-call" src="call.svg" alt="call">
+    </a>
+    <a class="menu__icon" href="#">
+      <img class="menu__icon-img-chat" src="chat.svg" alt="chat">
+    </a>
+    <button class="menu__icon">
+      <img class="menu__icon-img-profile" src="profile.svg" alt="profile">
+    </button>
+
+    <div class="menu__border"></div>
+
+    <button class="menu__btn">
+      <img class="menu__btn-img-repair" src="repair.svg" alt="repair">
+    </button>
+    <button class="menu__btn">
+      <img class="menu__btn-img-checkstatus" src="check.svg" alt="status">
+    </button>
+  </nav>
+
+  <main>
+    <header class="title">
+      <div class="title__border"></div>
+      <h1 class="title__text">Услуги и сервисы</h1>
+
+      <div class="title__label">
+        Оставить заявку
+        <button class="title__btn">
+          <img class="title__btn-img-repair" src="repair.svg" alt="repair">
+        </button>
+      </div>
+
+      <div class="title__label">
+        Статус ремонта
+        <button class="title__btn">
+          <img class="title__btn-img-checkstatus" src="check.svg" alt="status">
+        </button>
+      </div>
+    </header>
+
+    <nav class="navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Ремонтируемые устройства</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Ремонтируемые бренды</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Цены на услуги</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Адреса сервисных центров</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Специальные цены</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Отзывы</a>
+        </li>
+      </ul>
+    </nav>
+
+    <article class="info">
+      <div class="info__block">
+        <p class="info__text">
+          <span class="info__text--visible">
+            Мы являемся авторизованным сервисным центром по ремонту техники Dell.
+            Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+          </span><br>
+          <span class="info__text--hidden">
+            Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое
+            количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь,
+            советуют нас родным и близким.
+          </span>
+        </p>
+      </div>
+
+      <div class="info__next">
+        <button class="info__next-btn">
+          <img class="info__btn-img" src="next.svg" alt="next">
+        </button>
+        <p class="info__next-text">
+          Читать далее
+        </p>
+      </div>
+
+      <div class="info__pic">
+        <!-- <img class="info__pic-img" src="img.jpg" alt="picture"> -->
+      </div>
+
+    </article>
+
+  </main>
+
 </body>
 </html>
