@@ -1,0 +1,344 @@
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('./fonts/TTLakes-Regular.woff2') format('woff2'),
+    url('./fonts/TTLakes-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+    
+body {
+    font-family: 'TT Lakes';
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+}
+
+.menu{
+    padding: 24px 16px;
+    min-height: 88px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #D9FFF5;
+}
+
+.menu_border, .menu_border--pad  {
+    height: 32px;
+    border-left: 2px solid #EAEAEA;
+}
+
+.menu_btn, .title_label--btn, .menu_desktop{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #FF3E79;
+    border: none;
+    position: relative;
+    text-align: center
+}
+
+.menu_btn--burger, .menu_btn--checkstatus, .menu_btn--repair{
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	display: inline-block;
+}
+
+.menu_logo--img{
+    width: 96.55px; 
+    height: 50.81px;
+}
+
+main{
+    background-color: #F8F8F8;
+    padding-bottom: 40px;
+}
+
+.title{
+    padding-top: 24px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.title_border{
+    height: 40px;
+    width: 4px;
+    border-left: 4px solid #41F6D7;
+    border-radius: 0 4px 4px 0;
+}
+
+.title_text{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 28px;
+    padding-left: 12px;    
+}
+
+.title_label{
+    display: none;
+}
+
+.navigation_list {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    gap: 0;
+    align-items: center;
+    padding-left: 16px; 
+    margin-bottom: 0;
+    margin-top: 24px;
+    list-style-type: none;
+    overflow: auto;
+    
+}
+
+.navigation_list > :nth-child(1){
+    background-color: white;
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+}
+
+.navigation_list--item{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    font-size: 16px;
+    height: 40px;
+}
+
+.navigation_list--item--link{
+    /* display: block; */
+    text-decoration: none;
+    color: #7E7E82;
+    font-size: 16px;
+    padding-left: 16.54px;
+    padding-right: 9.3px;
+    white-space: nowrap;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.block_info--text{
+    width: 288px;
+    height: 90px;
+    font-size: 14px;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding-bottom: 16px;
+    overflow: hidden;
+    line-height: 18px;
+    margin-top: 24px;
+    letter-spacing: 0.2px;  
+}
+
+.block_next{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;  
+    padding-bottom: 16px;
+}
+
+.block_next--text{
+    font-size: 16px;
+    height: 24px;
+    margin: 0;
+    font-style: medium;
+}
+
+.block_next--btn{
+    border: none;
+    background-color: #F8F8F8;
+    padding-left: 24.29px;
+    padding-right: 16.29px;
+}
+
+.block_pic--img{
+    width: 320px;
+    height: 176px;
+    border-radius: 0;
+}
+
+
+.menu_border--pad, .menu_desktop {
+    display: none;
+}
+
+@media (min-width: 768px){
+
+    .menu_border--pad, .menu_desktop  {
+        display: block;
+    }
+
+   .menu_desktop--call, .menu_desktop--chat, .menu_desktop--profile {
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+   }
+
+   .menu{
+        display: flex;
+        align-items: center;
+        padding: 18.59px 24px;
+      }
+      
+    .menu :nth-child(4) {
+        margin-left: auto;
+    }
+
+    .menu > :nth-child(1),
+    .menu > :nth-child(2),
+    .menu > :nth-child(6),
+    .menu > :nth-child(7) {
+        margin-right: 20px;
+    }
+
+    .menu > :nth-child(4),
+    .menu > :nth-child(5),
+    .menu > :nth-child(8) {
+        margin-right: 16px;
+    }
+
+    .title_text{
+        padding-left: 24px;    
+    }
+
+    .block{
+        margin-left: 24px;
+        margin-top: 32px;
+        width: 720px;
+        height: 208px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 48px;
+        grid-template-areas: "block_info block_pic"
+    }
+
+    .block_info{
+        grid-area: block_info;
+    }
+
+    .block_next{
+        grid-area: block_info;
+        align-self: end;
+    }
+
+    .block_pic{
+        grid-area: block_pic;
+    }
+
+    .block_pic--img{
+        width: 360px;
+        height: 208px;
+        border-radius: 6px 0 0 6px;
+    }
+
+    .block_info{
+        width: 312px;
+        height: 160px;
+    }
+
+    .block_info--text{
+        margin: 0;
+        padding: 0;
+        width: 312px;
+        height: 160px;
+    }
+
+    .block_next--btn{
+        padding-left: 8px;
+    }
+
+    .block_info--text--hidden{
+        display: block;
+        margin-top: 30px;
+    }
+}
+
+@media (min-width: 1120px){
+
+    .menu{
+        display: none;
+    }
+
+    .title{
+        padding-top: 42px;
+        padding-right: 25px;
+    }
+
+    .title_text{
+        padding-left: 32px;    
+    }
+
+    .title_btn{
+        display: block;
+    }
+
+    .title :nth-child(3) {
+        margin-left: auto;
+        margin-right: 32px;
+    }
+
+    .title_label {
+        display: flex; 
+        align-items: center;
+        gap: 8px; 
+    }
+
+    .navigation_list {
+        overflow: visible;
+        grid-template-columns: repeat(5, auto);
+        padding-right: 25px;
+        padding-left: 32px;
+    }
+
+    .block{
+        margin-top: 0;
+        margin-left: 34px;
+        width: 833px;
+        height: 307px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 36px;
+        grid-template-areas: "block_info block_pic"
+    }
+
+    .block_pic--img{
+        width: 531.35px;
+        height: 307px;
+        margin-top: 7px;
+    }
+
+    .block_info{  
+        width: 490px;
+        height: 160px;
+    }
+
+    .block_info--text{
+        width: 490px;
+        height: 160px;
+        margin-top: 16.22px;
+    }
+
+    .block_next{
+        grid-area: block_info;
+        align-self:end;
+        margin-bottom: 90px;
+    }
+
+    .block_next--btn{
+        padding-left: 5px;
+    }
+
+    
+
+}
